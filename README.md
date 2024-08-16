@@ -24,13 +24,20 @@ The BloodConnect is a web application that connects blood donors with individual
   - Dotenv for environment variables
   - Express Session for session management
 
-## How to Run
+## Installation & Setup
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+- MySQL installed on your machine.
+
+### Steps
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/username/blood-donor-finder.git
-   cd blood-donor-finder
+   git clone https://github.com/Pritimohan/BloodConnect.git
+   cd BloodConnect
    ```
 
 2. **Install dependencies:**
@@ -52,33 +59,23 @@ The BloodConnect is a web application that connects blood donors with individual
    npm start
    ```
 5. **Access the application:**
-   The application will be accessible at `http://localhost:3000`.
-
-## Project Structure
-
-blood-donor-finder/
-│
-├── public/ # Static assets (CSS, JS, images)
-├── routes/ # Application routes
-├── views/ # EJS templates
-├── models/ # MySQL models
-├── .env # Environment variables
-├── app.js # Main application file
-├── package.json # Project metadata and dependencies
-└── README.md # Project documentation
+   ```bash
+   http://localhost:3000
+   ```
 
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+
+![Home Page](./screenshorts/home.png)
 
 ### Donor Registration
-![Donor Registration](screenshots/register.png)
+
+![Donor Registration](./screenshorts/register.png)
 
 ### Blood Search
-![Blood Search](screenshots/search.png)
 
-
+![Blood Search](./screenshorts/search.png)
 
 ## License
 

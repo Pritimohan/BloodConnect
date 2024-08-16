@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@keyframes notification {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 20px;
+  }
+}
+@keyframes leftToRight {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1599556147783-7edf67c327e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#form {
+  width: 30vw;
+  height: 75vh;
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(191, 191, 193, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+  color: gray;
+}
+
+.styles {
+  /* color: #ffaf00; */
+  font-size: 1rem;
+  background-color: white;
+  width: 25vw;
+  height: 9vh;
+  border-radius: 200px;
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+}
+.submitBtn {
+  width: 20vw;
+  height: 9vh;
+  border: none;
+  border-radius: 200px;
+  background-color: #ffaf00;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+.submitBtn:hover {
+  background-color: #e79e00;
+  color: white;
+}
+
+.error {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 30px;
+  background-color: white;
+  top: 20px;
+  right: 20px;
+  border-radius: 10px;
+  animation: notification 0.3s ease-in-out;
+  display: none;
+  color: red;
+  font: 1.1rem "Inclusive Sans", sans-serif;
+}
+.messagefordonor {
+  width: 350px;
+  height: fit-content;
+  padding: 40px;
+  background: transparent;
+  color:black;
+  position: absolute;
+  left: 0;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(191, 191, 193, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 0px 20px 20px 0px;
+  font: 0.9rem "Inclusive Sans", sans-serif;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  animation: leftToRight 0.5s ease-in-out;
+
+}
+.messagefordonor>h3{
+  font-size: 1.5rem;
+}

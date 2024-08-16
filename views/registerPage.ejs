@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/registerPage.css">
+    <title>BloodConnect</title>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <div id="register">
+            <div class="error"><%=error%></div>
+            <div class="messagefordonor">
+                <h3>Join Us in Saving Lives!</h3>
+                <p>Your decision to become a blood donor can make a profound difference in someone's life. By donating blood, you are giving the gift of health and hope to patients in need. Register now and become a part of our community of lifesavers. Every drop counts, and your contribution can help save lives. Together, we can create a healthier and stronger community. Thank you for your generosity and willingness to help others.</p>
+
+            </div>
+            <form action="/register" id="form" method="post">
+                <input id="name" class="name styles" type="text" placeholder="First Name " name="firstname">
+                <input id="name" class="name styles" type="text" placeholder="Last Name " name="lastname">
+                <input id="city" class="city styles" type="text" placeholder="City Name " name="city">
+
+                <select id="BldGrp" class="bloodgrp styles" type="text" placeholder=" Blood Group " name="bloodgroup">
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <input id="phone" class="phone styles" type="number" placeholder=" Phone Number " name="phonenumber">
+                <button type="submit" class="submitBtn">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    const error = document.querySelector('.error');
+    if (error.innerHTML !== '') error.style.display = 'block';
+    setTimeout(()=>{
+        error.style.display = 'none';
+        error.innerHTML = '';
+   
+    },4000)
+
+</script>
+
+</html>

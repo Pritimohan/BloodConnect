@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+
+@keyframes identifier {
+  from {
+    top: 50px;
+  }
+  to {
+    top: 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1599556147783-7edf67c327e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(191, 191, 193, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#form {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+  color: gray;
+}
+button > i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.searchBox {
+  padding-left: 30px;
+  width: 20vw;
+  height: 9vh;
+  border: none;
+  border-radius: 50px;
+}
+#resultBox {
+  width: 95%;
+  height: 70%;
+  padding: 20px 0 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  border-radius: 20px;
+  /* background-color: black; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#resultBox::-webkit-scrollbar {
+  display: none;
+}
+#resultBox > h1 {
+  position: absolute;
+  top: 30%;
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#message {
+  width: 95%;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#message > h5 {
+  padding: 25px 0px;
+  display: inline-block;
+  font-weight: 100;
+  font-family: "Inclusive Sans", sans-serif;
+}
+button {
+  background: transparent;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+}
+.registerBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  font-size: 2rem;
+  background-color: #fec853;
+  transition: all ease-in-out 0.3s;
+}

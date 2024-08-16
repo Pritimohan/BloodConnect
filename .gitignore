@@ -57,12 +57,5 @@ protractor-debug.log
 *.njsproj
 *.sln
 
-# EJS specific files
-views/**/*.ejs
 
-# Static assets
-public/uploads/
-public/images/
-public/javascripts/
-public/stylesheets/
 

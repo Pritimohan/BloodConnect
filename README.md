@@ -41,12 +41,15 @@ The BloodConnect is a web application that connects blood donors with individual
    ```
 
 2. **Install dependencies:**
+
    ```bash
     npm install
    ```
+
 3. **Set up the database:**
    - Create a new MySQL database and run the queries in `database.sql` to set up the required tables.
    - Create a `.env` file in the root directory and add the following environment variables:
+
      ```
      DB_HOST=localhost
      DB_USER=root
@@ -54,11 +57,15 @@ The BloodConnect is a web application that connects blood donors with individual
      DB_PASSWORD=your_password
      SESSION_SECRET=your_secret
      ```
+
 4. **Run the server:**
+
    ```bash
    npm start
    ```
+
 5. **Access the application:**
+
    ```bash
    http://localhost:3000
    ```

@@ -127,3 +127,79 @@ button {
   background-color: #fec853;
   transition: all ease-in-out 0.3s;
 }
+
+/* Tablet (1024px and below) */
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #search {
+    width: 90vw;
+    height: auto;
+    padding: 30px;
+    gap: 20px;
+  }
+  .searchBox {
+    width: 35vw;
+    height: 6vh;
+  }
+  #resultBox {
+    width: 100%;
+    height: 40vh;
+  }
+  #message {
+    height: fit-content;
+    padding: 25px 0px;
+  }
+  #message > h5 {
+    padding: 5px 20px;
+  }
+  .registerBtn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #search {
+    width: 90vw;
+    height: auto;
+    padding: 30px;
+    gap: 20px;
+  }
+  .searchBox {
+    width: 35vw;
+    height: 6vh;
+  }
+  #resultBox {
+    width: 100%;
+    height: 40vh;
+  }
+  #message {
+    flex-direction: column;
+    align-items: start;
+  }
+  #message > h5 {
+    padding: 5px 20px;
+  }
+  .registerBtn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+    right: 20px;
+    bottom: 20px;
+  }
+}
